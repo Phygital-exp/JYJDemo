@@ -57,7 +57,7 @@ function renderResults(results) {
         results.forEach(result => {
             output += `
                 <div class="result-item">
-                    <h3>${result.NOMBRE}</h3>
+                    <h3>${result.PDV}</h3>
                     <ul>
                         <li>
                             <strong>SAP:</strong> ${result.SAP} 
@@ -66,7 +66,6 @@ function renderResults(results) {
                         <li><strong>Región:</strong> ${result.REGION || 'N/A'}</li>
                         <li><strong>Ciudad:</strong> ${result.CIUDAD || 'N/A'}</li>
                         <li><strong>Canal:</strong> ${result.CANAL || 'N/A'}</li>
-                        <li><strong>PDV:</strong> ${result.PDV || 'N/A'}</li>
                     </ul>
                 </div>
             `;
